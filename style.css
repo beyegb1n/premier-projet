@@ -1,3 +1,419 @@
-h1 {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-right {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+body {
+    background-color: #fcfdec;
+}
+
+.logo-1 {
+    height: 3.56em;
+    width: 12.5em;
+    margin-left: 1.87em;
+    margin-top: 1.87em;
+}
+
+.nav-1 li {
+    list-style: none;
+    margin-right: 1.87em;
+    margin-top: 1.87em;
+}
+
+.nav-1 a {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: #3DA5DA;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-1 a:hover {
+    font-family: Helvetica, sans-serif;
+    color: #0679B1;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-1 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    height: 61.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainlogo-1 img {
+    height: 17.81em;
+    width: 62.5em;
+    animation: blink-1 0.6s 0.5s both;
+}
+
+.mainlogo-1 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: #3DA5DA;
+    text-transform: uppercase;
+    font-weight: 500;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+
+.blue {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-img, .second-img, .third-img {
+    width: 31%;
+    height: 100%;
+}
+
+.first-img {
+    background-image: url("../images/fenetre.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.second-img {
+    background-image: url("../images/planches.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.third-img {
+    background-image: url("../images/oiseau.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+footer h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #3DA5DA;
+}
+
+.logo-2 {
+    height: 3.56em;
+    width: 12.5em;
+    margin-left: 1.87em;
+    margin-top: 1.87em;
+}
+
+.nav-2 li {
+    list-style: none;
+    margin-right: 1.87em;
+    margin-top: 1.87em;
+}
+
+.nav-2 a {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: #E63123;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-2 a:hover {
+    font-family: Helvetica, sans-serif;
+    color: #930B00;
+}
+
+.nav-2 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainlogo-2 img {
+    height: 17.81em;
+    width: 62.5em;
+    animation: blink-1 0.6s 0.5s both;
+}
+
+.mainlogo-2 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: #E63123;
+    text-transform: uppercase;
+    font-weight: 500;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+
+.red {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-imgred, .second-imgred, .third-imgred {
+    width: 31%;
+    height: 100%;
+}
+
+.first-imgred {
+    background-image: url("../images/coca.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.second-imgred {
+    background-image: url("../images/cielrouge.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.third-imgred {
+    background-image: url("../images/tomate.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.logo-3 {
+    height: 3.56em;
+    width: 12.5em;
+    margin-left: 1.87em;
+    margin-top: 1.87em;
+}
+
+.nav-3 li {
+    list-style: none;
+    margin-right: 1.87em;
+    margin-top: 1.87em;
+}
+
+.nav-3 a {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: #77C0A4;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-3 a:hover {
+    font-family: Helvetica, sans-serif;
+    color: #2E8765;
+}
+
+.nav-3 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainlogo-3 img {
+    height: 17.81em;
+    width: 62.5em;
+    animation: blink-1 0.6s 0.5s both;
+}
+
+.mainlogo-3 h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: #77C0A4;
+    text-transform: uppercase;
+    font-weight: 500;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+
+.green {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-imgreen, .second-imgreen, .third-imgreen {
+    width: 31%;
+    height: 100%;
+}
+
+.first-imgreen {
+    background-image: url("../images/pelouse.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.second-imgreen {
+    background-image: url("../images/plante.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.third-imgreen {
+    background-image: url("../images/plante2.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .logo-1 {
+        height: 3.56em;
+        width: 5em;
+        margin-left: 1.87em;
+        margin-top: 3em;
+    }
+
+    .nav-1 a{
+        font-size: 0.5em;
+    }
+
+    main {
+        height: 367px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .mainlogo-1 img {
+        display: none;
+    }
+
+    .logo-2 {
+        height: 3.56em;
+        width: 5em;
+        margin-left: 1.87em;
+        margin-top: 3em;
+    }
+
+    .nav-2 a{
+        font-size: 0.5em;
+    }
+        
+    .mainlogo-2 img {
+        display: none;
+    }
+
+    .logo-3 {
+        height: 3.56em;
+        width: 5em;
+        margin-left: 1.87em;
+        margin-top: 3em;
+    }
+
+    .nav-3 a{
+        font-size: 0.5em;
+    }
+
+    .mainlogo-3 img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mainlogo-1 img {
+        width: 40em;
+    }
+
+    .mainlogo-2 img {
+        width: 40em;
+    }
+
+    .mainlogo-3 img {
+        width: 40em;
+    }
+
+    main {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+  
